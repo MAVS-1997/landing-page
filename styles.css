@@ -1,17 +1,15 @@
 body{
     height: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
+
     font-family: Roboto, sans-serif;
-    background-color: yellow;
     display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
 }
 .section1{ /*Seccion 1*/
-    width:1100px;
+    display: flex;
+    flex-direction: column;
     background-color: blue;
     
 }
@@ -19,25 +17,45 @@ body{
     
     display: flex;
 }
-
+.links{
+    
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
 .header img{
     width: 150px;
-    height: 50px;
+    height: 75px;
 }
 .contenido{
+    background-color: brown;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .contenido img{
     width: 400px;
     height: auto;
     margin: 50px;
 }
+.texto-s1{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    
+}
 
 .section2{ /*SECCION 2*/
-    width:1100px;
+    
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 .header2{
     text-align: center;
@@ -49,30 +67,33 @@ body{
 .container{
     background-color: orange;
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    align-items:flex-start;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     
 }
 .item1{
     background-color: red;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
    
 
 }
 .section3{ /*Seccion 3*/
-    width:1100px;
-    height: 500px;
+    
+    flex-grow: 1;
     background-color: blueviolet;
 }
 .section4{
-    width:1100px;
+    
     background-color: aliceblue;
 }
 .footer{
-    width:1100px;
+    
     background-color: steelblue;
     display: flex;
     align-items: center;
@@ -85,11 +106,13 @@ a{
     color: black;
     text-decoration: none;
 }
-.links{
-    
+
+button{
+    padding: 8px 16px;
+    border-radius: 8px;
+    height: 30px;
+    width: 85px;
     display: flex;
-    flex-grow: 1;
-    gap: 1rem;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
